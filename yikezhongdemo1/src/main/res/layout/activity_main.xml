@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.cmh.yikezhongdemo1.Fragment.myview.MyView
+            android:id="@+id/my_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </com.cmh.yikezhongdemo1.Fragment.myview.MyView>
+        <FrameLayout
+            android:id="@+id/fram"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/tab_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/btn_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/recommend_select"
+                android:gravity="center_horizontal|bottom"
+                android:paddingTop="2dp"
+                android:text="推荐"
+                android:textColor="@drawable/tv_color" />
+
+            <RadioButton
+                android:id="@+id/btn_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/crosstalk_select"
+                android:gravity="center_horizontal|bottom"
+                android:paddingTop="2dp"
+                android:text="段子"
+                android:textColor="@drawable/tv_color" />
+
+            <RadioButton
+                android:id="@+id/btn_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/video_select"
+                android:gravity="center_horizontal|bottom"
+                android:paddingTop="2dp"
+                android:text="视频"
+                android:textColor="@drawable/tv_color" />
+        </RadioGroup>
+    </LinearLayout>
+
+</layout>

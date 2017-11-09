@@ -1,0 +1,1 @@
+include ':app', ':yikezhongdemo1', ':slidingmenulibrary'
